@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius to Fahrenheit " />
+
+    <EditText
+        android:id="@+id/txtCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/btnConvert"
+        android:layout_toStartOf="@+id/btnConvert"
+        android:background="@android:drawable/editbox_background"
+        android:imeOptions="actionDone"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="1dip"
+        android:layout_marginTop="11dp"
+        android:text="convert" />
+
+    <TextView
+        android:id="@+id/lblFahrenheit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCelsius"
+        android:layout_marginTop="20dp"
+        android:text="Conversion Result"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</RelativeLayout>
